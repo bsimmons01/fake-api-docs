@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Platzi Fake Store API",
-      favicon: "/favicon.png",
+      favicon: "/icon.png",
       head: [
         {
           tag: "meta",
@@ -51,13 +51,13 @@ export default defineConfig({
         {
           tag: "script",
           content: `window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-TS6JSW87G9');`,
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TS6JSW87G9');`,
         },
       ],
       logo: {
-        src: "./src/assets/logo.png",
+        src: "./src/assets/icon.png",
       },
       social: {
         github: "https://github.com/PlatziLabs/fake-api-backend",
@@ -72,39 +72,39 @@ export default defineConfig({
         {
           label: "About",
           items: [
-            { label: "Introduction", link: "en/about/introduction/" },
-            { label: "Showcase", link: "en/about/showcase/" },
-            // { label: "Open Source", link: "en/about/open-source/" },
+            { label: "Introduction", link: "about/introduction/" },
+            { label: "Showcase", link: "about/showcase/" },
           ],
         },
         {
           label: "REST API",
           items: [
-            { label: "Products", link: "en/rest/products/" },
-            { label: "Filter products", link: "en/rest/products-filter/" },
-            { label: "Categories", link: "en/rest/categories/" },
-            { label: "Users", link: "en/rest/users/" },
-            { label: "Auth JWT", link: "en/rest/auth-jwt/" },
-            { label: "Files", link: "en/rest/files/" },
-            { label: "Swagger Docs", link: "en/rest/swagger/" },
+            { label: "Products", link: "rest/products/" },
+            { label: "Filter products", link: "rest/products-filter/" },
+            { label: "Categories", link: "rest/categories/" },
+            { label: "Users", link: "rest/users/" },
+            { label: "Auth JWT", link: "rest/auth-jwt/" },
+            { label: "Locations", link: "rest/locations/" },
+            { label: "Files", link: "rest/files/" },
+            { label: "Swagger Docs", link: "rest/swagger/" },
           ],
         },
         {
           label: "GraphQL",
           items: [
-            { label: "Products", link: "en/gql/products/" },
-            { label: "Filter products", link: "en/gql/products-filter/" },
-            { label: "Categories", link: "en/gql/categories/" },
-            { label: "Users", link: "en/gql/users/" },
-            { label: "Auth JWT", link: "en/gql/auth-jwt/" },
-            { label: "Playground", link: "en/gql/playground/" },
+            { label: "Products", link: "gql/products/" },
+            { label: "Filter products", link: "gql/products-filter/" },
+            { label: "Categories", link: "gql/categories/" },
+            { label: "Users", link: "gql/users/" },
+            { label: "Auth JWT", link: "gql/auth-jwt/" },
+            { label: "Playground", link: "gql/playground/" },
           ],
         },
         {
           label: "Resources",
           items: [
-            { label: "Postman", link: "en/resources/postman/" },
-            { label: "Insomnia", link: "en/resources/insomnia/" },
+            { label: "Postman", link: "resources/postman/" },
+            { label: "Insomnia", link: "resources/insomnia/" },
           ],
         },
       ],
